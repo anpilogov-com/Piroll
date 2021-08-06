@@ -1,0 +1,12 @@
+/* Logo */
+
+.logo {
+   display: block;
+}
+
+/* Image */
+
+.logo__image {
+   width: 32px;
+   height: 32px;
+}

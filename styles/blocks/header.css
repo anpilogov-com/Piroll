@@ -1,0 +1,25 @@
+/* Header */
+
+.header {
+   display: grid;
+   padding: 20px;
+}
+
+/* Logo */
+
+@media (min-width: 320px) {
+   .header__logo {
+      z-index: 1;
+   }
+}
+
+/* Mix menu */
+
+@media (min-width: 320px) {
+   .header__menu {
+       position: absolute;
+       top: 0;
+       right: 0;
+       left: 0;
+   }
+}

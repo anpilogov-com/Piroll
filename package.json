@@ -1,0 +1,11 @@
+{
+  "name": "piroll-website",
+  "version": "1.0.0",
+  "description": "Is my first website from Photoshop layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anpilogov A O",
+  "license": "ISC"
+}
