@@ -1,0 +1,17 @@
+/* Logo */
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.logo__title {
+    font-family: 'Dewi', sans-serif;
+    font-weight: bold;
+    
+    align-self: center;
+}
+
+.logo__image {
+    margin-right: 10px;
+}

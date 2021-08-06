@@ -1,0 +1,23 @@
+/* Wrapper */
+
+.wrapper {
+   width: 100%;
+}
+
+/* Offer */
+
+.wrapper__offer {
+   width: 100%;
+   height: 100%;
+}
+
+.wrapper__offer--image {
+   background-image: url("../../images/optimize/offer-image-optim.jpg");
+   background-size: cover;
+}
+
+@media (max-width: 425px) {
+   .wrapper__offer--image {
+      background-image: none;
+   }
+}

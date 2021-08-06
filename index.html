@@ -13,6 +13,65 @@
       />
    </head>
    <body class="page__body">
-      
+      <header class="header">
+         <div class="header__logo logo">
+            <img class="logo__image" src="images/optimize/-Icon-32-optim.svg" width="32" height="32" alt="Логотип оргпнизпции/сайта организации.">
+            <p class="logo__title">Piroll</p>
+         </div>
+         <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list" width="32" height="32">
+               <svg class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <use class="menu__icon-menu" href="images/optimize/sprite.svg#menu"></use>
+                    <use class="menu__icon-cross" href="images/optimize/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Work</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Process</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Services</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--current" href>Contact</a>
+                </li>
+            </ul>
+         </nav>
+      </header>
+      <section class="wrapper">
+          <div class="wrapper__offer wrapper__offer--image offer">
+              <div class="offer__content">
+                <h1 class="offer__title">We Design and Develop</h1>
+                <p class="offer__tagline">
+                    We are a new design studio based in USA. We have over 
+                    20 years of combined experience, and know a thing or two 
+                    about designing websites and mobile apps.
+                </p>
+                <button class="offer__button" type="button" aria-expanded="false">СONTACT US</button>
+              </div>
+          </div>
+      </section>
+      <script>
+        (() => {
+            const menuButton = document.querySelector('.menu__button');
+            const menuList = document.querySelector('.menu__list');
+
+            menuButton.addEventListener('click', () => {
+                let expanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !expanded);
+                menuButton.classList.toggle('menu__button--open');
+                menuList.classList.toggle('menu__list--open');
+            });
+        })();
+      </script>
    </body>
 </html>

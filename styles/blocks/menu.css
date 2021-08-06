@@ -1,0 +1,133 @@
+/* Menu */
+
+@media all and (max-width: 736px) {
+    .menu {
+        display: grid;
+    }
+}
+
+/* Button */
+
+@media all and (min-width: 320px) {
+    .menu__button {
+        z-index: 1;
+        display: block;
+        margin: 14px;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        justify-self: end;
+    }
+}
+
+@media all and (min-width: 736px) {
+    .menu__button {
+        display: none;
+    }
+}
+
+/* Icon */
+
+@media all and (min-width: 320px) {
+    .menu__icon {
+        display: block;
+        stroke: #191919;
+    }
+
+    .menu__icon:hover {
+        stroke: #10c9c3;
+    }
+
+    .menu__icon-menu,
+    .menu__button--open .menu__icon-cross {
+        display: block;
+    }
+
+    .menu__icon-cross,
+    .menu__button--open .menu__icon-menu {
+        display: none;
+    }
+}
+
+/* List */
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+
+@media all and (min-width: 320px) {
+    .menu__list {
+        display: none;
+        row-gap: 10px;
+        padding-top: 12px;
+        padding-bottom: 22px;
+        padding-left: 28px;
+        box-shadow: 0 50vh 0 50vh #e9e9e9;
+        background-color: #e9e9e9;
+    }
+
+    .menu__list--open {
+        display: grid;
+    }
+}
+
+@media all and (min-width: 736px) {
+    .menu__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 30px;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+/* Item */
+
+.menu__item {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* Link */
+
+.menu__link {
+    color: var(--special-dark);
+}
+
+.menu__link[href]:hover {
+    color: #10c9c3;
+}
+
+.menu__link--current {
+    color: var(--basic-black);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Dewi Expanded', sans-serif;
+}
+
+.menu__link--inactive {
+    color: #838383;
+}
+
+.menu__link--patreon {
+    padding-left: 18px;
+}
+
+.menu__link--patreon::before {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -18px;
+    width: 16px;
+    height: 16px;
+    content: url('../../images/patreon.svg');
+}
+
+@media all and (min-width: 320px) {
+    .menu__link--patreon {
+        margin-left: -18px;
+    }
+}
