@@ -2,7 +2,16 @@
 
 .header {
    display: grid;
-   padding: 20px;
+   padding: 16px;
+}
+
+@media (min-width: 736px) {
+   .header {
+      padding-left: 24px;
+      padding-right: 24px;
+      grid-template-columns: max-content max-content;
+      justify-content: space-between;
+   }
 }
 
 /* Logo */
@@ -13,13 +22,25 @@
    }
 }
 
+@media (min-width: 736px) {
+   .header__logo {
+      align-self: start;
+   }
+}
+
 /* Mix menu */
 
 @media (min-width: 320px) {
    .header__menu {
-       position: absolute;
-       top: 0;
-       right: 0;
-       left: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+   }
+}
+
+@media (min-width: 736px) {
+   .header__menu {
+      align-self: start;
    }
 }
