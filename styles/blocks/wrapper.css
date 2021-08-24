@@ -12,11 +12,11 @@
 }
 
 .wrapper__offer--image {
-   background-image: url("../../images/optimize/offer-image-optim.jpg");
+   background-image: url("../../images/optimize/offer-optim.jpg");
    background-size: cover;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
    .wrapper__offer--image {
       background-image: none;
    }
@@ -30,7 +30,7 @@
    justify-content: center;
    padding: 15px;
    background-color: #ffffff;
-   min-height: 450px;
+   min-height: 620px;
 }
 
 /* Skills */
@@ -39,7 +39,7 @@
    display: flex;
    padding: 0;
    background-color: #f8f9f9;
-   min-height: 450px;
+   min-height: 720px;
    flex-direction: row;
    justify-content: space-between;
    align-content: center;
@@ -92,5 +92,96 @@
       padding: 50px;
       flex-direction: column;
       flex-wrap: nowrap;
+   }
+}
+
+/* Work */
+
+.wrapper__work {
+   display: grid;
+   grid-template-rows: max-content min-content;
+   padding: 0;
+   background-color: #f8f9f9;
+   width: 100%;
+   min-height: 700px;
+}
+
+.work__images {
+   display: inline-flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+@media all and (min-width: 1600px) {
+   .work__images {
+      display: grid;
+      grid-template-columns: max-content max-content max-content max-content;
+   }
+}
+
+.work__link {
+   padding: 20px;
+   background-color: #e9e9e9;
+   width: 100%;
+   height: 60px;
+}
+
+.wrapper__process {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   padding: 15px;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   background-color: #ffffff;
+   min-height: 320px;
+}
+
+.wrapper__services {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   background-color: #e9e9e9;
+   width: 100%;
+   min-height: 640px;
+}
+
+.wrapper__carucel {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   background-color: #10c9c3;
+   width: 100%;
+   min-height: 640px;
+}
+
+.wrapper__partners {
+   display: flex;
+   padding: 15px;
+   background-color: #e9e9e9;
+   width: 100%;
+   min-height: 320px;
+}
+
+@media all and (max-width: 768px) {
+   .wrapper__partners {
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+}
+
+@media all and (max-width: 425px) {
+   .wrapper__partners {
+      flex-wrap: wrap;
+      flex-direction: column;
    }
 }

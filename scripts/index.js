@@ -12,3 +12,5 @@
       menuList.classList.toggle("menu__list--open");
    });
 })();
+
+

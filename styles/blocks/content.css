@@ -4,6 +4,7 @@
    margin: auto;
    display: grid;
    justify-content: center;
+   justify-items: center;
    align-items: center;
    text-align: center;
 }
@@ -38,8 +39,8 @@
 .content--image {
    background-color: #e9e9e9;
    width: 50%;
-   height: 450px;
-   background-image: url("../../images/optimize/-skills-optim.jpg");
+   height: 720px;
+   background-image: url("../../images/optimize/skills-optim.jpg");
    background-size: cover;
 }
 
