@@ -1,0 +1,154 @@
+/* Form */
+
+.form {
+	display: grid;
+	grid-template-rows: max-content max-content min-content;
+	column-gap: 25px;
+	row-gap: 25px;
+	align-items: center;
+	justify-items: stretch;
+
+    margin-top: 25px;
+}
+
+.form__user-info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media all and (max-width: 768px) {
+	.form__user-info {
+		justify-content: center;
+	}
+}
+
+.form__message {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.form__submit-button {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.form__submit {
+	cursor: pointer;
+
+	background-color: #10c9c3;
+	color: #fff;
+
+	font-family: "Dewi", sans-serif;
+	font-weight: bold;
+	font-size: 14pt;
+
+	padding: 12px;
+
+	border: 0px;
+	border-radius: 0px;
+	width: 50%;
+	height: 64px;
+}
+
+@media all and (max-width: 768px) {
+	.form__submit {
+		padding: 6px;
+		width: 100%;
+	}
+}
+
+.form__submit:hover {
+	background-color: #0ab1ab;
+}
+
+/* Form input */
+
+.form__name {
+	font-family: "Dewi", sans-serif;
+	font-size: 14pt;
+	color: #777272;
+
+	margin-right: 10px;
+	padding: 12px;
+	padding-left: 16px;
+
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	height: 45px;
+	width: 320px;
+}
+
+@media all and (max-width: 768px) {
+	.form__name {
+		margin-right: 0px;
+		width: 100%;
+	}
+}
+
+.form__mail {
+	font-family: "Dewi", sans-serif;
+	font-size: 14pt;
+	color: #777272;
+
+	margin-left: 10px;
+	padding: 12px;
+	padding-left: 16px;
+
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	height: 45px;
+	width: 320px;
+}
+
+@media all and (max-width: 768px) {
+	.form__mail {
+		margin-left: 0px;
+		margin-top: 25px;
+		width: 100%;
+	}
+}
+
+.form__title {
+	font-family: "Dewi", sans-serif;
+	font-size: 14pt;
+	color: #777272;
+
+	padding: 12px;
+	padding-left: 16px;
+
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	height: 45px;
+}
+
+.form__comment {
+	font-family: "Dewi", sans-serif;
+	font-size: 14pt;
+	color: #777272;
+
+	margin-top: 25px;
+	padding: 12px;
+	padding-left: 16px;
+
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	height: 256px;
+	width: 100%;
+
+	resize: none;
+}
