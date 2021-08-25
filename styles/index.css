@@ -2,12 +2,21 @@
 
 @import "fonts.css";
 @import "box-model.css";
-@import "variables.css";
 
 /* Block */
 
-@import "blocks/grid.css";
-@import "blocks/page.css";
-@import "blocks/header.css";
-@import "blocks/logo.css";
-@import "blocks/menu.css";
+@import 'blocks/page.css';
+@import 'blocks/header.css';
+@import 'blocks/logo.css';
+@import 'blocks/menu.css';
+@import 'blocks/wrapper.css';
+@import 'blocks/offer.css';
+@import 'blocks/content.css';
+@import 'blocks/card.css';
+@import 'blocks/image.css';
+@import 'blocks/lick.css';
+@import 'blocks/video.css';
+@import 'blocks/services.css';
+@import 'blocks/slider.css';
+@import 'blocks/form.css';
+@import 'blocks/footer.css';
