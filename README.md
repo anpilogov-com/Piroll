@@ -11,7 +11,7 @@ Based on Google Lighthouse research the website is reasonably well optimized in 
 
 📱 For a mobile 📱
 
-![Google Lighthouse research for desktop](https://github.com/anpilogov-com/Piroll/blob/Development/mobiles.png?raw=true) 
+![Google Lighthouse research for mobile](https://github.com/anpilogov-com/Piroll/blob/Development/mobiles.png?raw=true) 
 
 
 # Technological
